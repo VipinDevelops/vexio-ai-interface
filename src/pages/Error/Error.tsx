@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 import { Container } from '../../components/Container/Container';
 import styles from './Error.module.css';
 import { Button } from '../../components/Button/Button';

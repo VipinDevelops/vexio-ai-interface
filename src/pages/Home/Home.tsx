@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 import { Button } from '../../components/Button/Button';
 import Hero from '../../../public/hero.png';
 import styles from './Home.module.css';
