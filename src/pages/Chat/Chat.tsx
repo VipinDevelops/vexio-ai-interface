@@ -16,7 +16,7 @@ enum Speaker {
   Human = 'HUMAN',
 }
 
-export const ChatPage = () => {
+const ChatPage = () => {
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -133,3 +133,4 @@ export const ChatPage = () => {
     </>
   );
 };
+export default ChatPage;

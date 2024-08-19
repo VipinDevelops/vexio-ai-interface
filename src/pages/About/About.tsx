@@ -2,7 +2,7 @@ import { Card } from '../../components/Card/Card';
 import styles from './About.module.css';
 import { motion } from 'framer-motion';
 
-export const AboutPage = () => {
+const AboutPage = () => {
   return (
     <motion.div
       className={styles['container']}
@@ -56,3 +56,4 @@ export const AboutPage = () => {
     </motion.div>
   );
 };
+export default AboutPage;

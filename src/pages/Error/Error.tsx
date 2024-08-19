@@ -1,14 +1,15 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-
+'use client';
 import { Container } from '../../components/Container/Container';
 import styles from './Error.module.css';
 import { Button } from '../../components/Button/Button';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Hero from '../../../public/hero.png';
+import dynamic from 'next/dynamic';
 
-export const ErrorPage = () => {
+const ErrorPage = () => {
   const navigate = useNavigate();
 
   const newChatHandler = () => {
@@ -52,3 +53,9 @@ export const ErrorPage = () => {
     </Container>
   );
 };
+// export default ErrorPag;
+
+// export default HomePage;
+export default dynamic(() => Promise.resolve(ErrorPage), {
+  ssr: false,
+});

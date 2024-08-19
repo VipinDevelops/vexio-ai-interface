@@ -1,13 +1,15 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
+import { Container } from '../../components/Container/Container';
 
 import { Button } from '../../components/Button/Button';
 import Hero from '../../../public/hero.png';
 import styles from './Home.module.css';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
 
-export const HomePage = () => {
+const HomePage = () => {
   const navigate = useNavigate();
 
   const newChatHandler = () => {
@@ -47,3 +49,8 @@ export const HomePage = () => {
     </div>
   );
 };
+
+// export default HomePage;
+export default dynamic(() => Promise.resolve(HomePage), {
+  ssr: false,
+});
