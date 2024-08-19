@@ -29,4 +29,3 @@ Animation Timing: Syncing animations with form submission events required carefu
 
 Custom Themes: Allow users to switch between different themes for the chat interface.
 AI-Powered Replies: Integrate AI to suggest or auto-complete chat inputs.
-# vexio-ai-interface
